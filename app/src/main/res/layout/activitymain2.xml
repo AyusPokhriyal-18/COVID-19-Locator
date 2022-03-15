@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:fitsSystemWindows="true"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:fitsSystemWindows="true"
+
+        android:layout_height="192dp"
+        android:layout_width="match_parent">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:toolbarId="@+id/toolbar"
+            app:title="COVID-19"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed|exitUntilCollapsed"
+app:expandedTitleTextAppearance="@style/ExpandText"
+            app:collapsedTitleTextAppearance="@id/colLayout"
+android:id="@+id/colLayout"
+          >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+               android:layout_gravity="center" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DashBoard"
+                    android:fontFamily="casual"
+                    android:textSize="24sp"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:id="@+id/t2"></TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Covid-19 live update"
+                    android:fontFamily="casual"
+                    android:textSize="17sp"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:id="@+id/t3"></TextView>
+
+
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_height="?attr/actionBarSize"
+               app:navigationIcon="@drawable/ic_menu_black_24dp"
+                android:layout_width="match_parent"></androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/container"
+
+            ></FrameLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/menubottom"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+android:background="@drawable/roundedborder"
+        app:menu="@menu/menubottom"
+      app:itemTextColor="@color/black"
+android:backgroundTint="@color/colorPrimary"
+
+        android:elevation="16dp"
+        android:padding="8dp"
+       ></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

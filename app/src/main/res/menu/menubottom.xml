@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menubottom"
+
+    >
+    <item
+        android:id="@+id/Home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        android:iconTint="@color/white"
+
+        app:showAsAction="ifRoom"></item>
+
+    <item android:id="@+id/AllCountries"
+        android:icon="@drawable/ic_countries"
+        android:title="All Countries"
+android:iconTint="@color/white"
+        app:showAsAction="ifRoom"></item>
+
+    <item android:id="@+id/India"
+        android:icon="@drawable/ic_india"
+        android:title="India"
+        android:iconTint="@color/white"
+        app:showAsAction="ifRoom"></item>
+
+
+    <item android:id="@+id/Symptoms"
+        android:icon="@drawable/ic_symptoms"
+        android:title="Symptoms"
+        android:iconTint="@color/white"
+        app:showAsAction="ifRoom"></item>
+</menu>

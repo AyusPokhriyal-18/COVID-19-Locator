@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   android:id="@+id/homeFrag"
+    tools:context=".Fragment.HomeFrag"
+   android:background="@color/black"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="229dp"
+        app:srcCompat="@drawable/country_icon"
+        android:paddingTop="10dp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+           android:background="@color/black"
+            android:layout_height="match_parent"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abril_fatface"
+                android:text="TotalCases"
+                android:textSize="20sp"
+               android:textColor="@color/white"
+                android:id="@+id/totalCase"
+                android:padding="5dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="-1dp"
+                android:fontFamily="@font/aldrich"
+                android:text="00000"
+                android:padding="5dp"
+               android:textColor="@color/white"
+            android:id="@+id/cases"
+                android:textSize="20sp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abril_fatface"
+                android:text="TotalDeaths"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:id="@+id/deathCases"
+                android:layout_below="@id/totalCase"
+                android:textColor="@color/red"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/totalCase"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:padding="5dp"
+                android:fontFamily="@font/aldrich"
+                android:text="00000"
+
+                android:id="@+id/deaths"
+                android:textSize="20sp"
+                android:textColor="@color/red"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abril_fatface"
+                android:text="TotalRecovered"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:id="@+id/totalrecov"
+                android:layout_below="@id/deathCases"
+                android:textColor="@color/Dgreen" ></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/aldrich"
+                android:id="@+id/recover"
+                android:text="00000"
+                android:textSize="20sp"
+                android:layout_below="@id/deathCases"
+               android:textColor="@color/Dgreen"
+                ></TextView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="536dp"
+        android:layout_margin="10dp"
+
+        android:backgroundTint="@color/black"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            app:cardBackgroundColor="@color/Dorange"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/q1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/abril_fatface"
+                    android:text="@string/quesec"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/abril_fatface"
+                    android:text="@string/ansFirstText"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"></TextView>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
